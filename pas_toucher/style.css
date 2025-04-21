@@ -1,0 +1,145 @@
+
+body
+{
+   border: 3px solid #4a2b0e;
+   border-radius: 30px;
+   background-image:url(fond0.jpg);
+}
+
+
+
+ canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+position: absolute; /* ajouter cette ligne */
+  top: 0; /* ajouter cette ligne */
+  left: 0; /* ajouter cette ligne */
+ z-index: 1000; /* ajouter cette ligne */
+}
+
+
+
+
+.titre
+{
+
+     font-family: snell roundhand,edwardian script ITC,french script MT,Kuntler script,vladimir script,comic sans MS, arial;
+     font-size: 30px;
+     text-align: center;
+     font-style: italic;
+     width: 100%; /*  largeur du cadre  */
+     padding:5px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+     margin: 0 auto;
+     color: #d8d395;
+}
+/* ------------------------------------------------------------------*/
+
+
+
+
+
+.texte
+{
+margin:5px ;
+margin-left: auto;
+margin-right: auto;  
+border: 3px solid #4a2b0e; 
+border-radius: 20px; 
+background-image:url(fond1.jpg);
+padding:2px 2px; 
+height:50px;
+width:400px;
+font-size:22pt;
+color:#000000;
+font-style:italic;
+border-width:2;
+font-family: snell roundhand,comic sans MS,arial;
+border-style:solid;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------*/
+
+.t2
+{
+    background-image:url(fond1.jpg);/* couleur de fond tableau*/    
+    margin:20px ; /* marge entre bas tableau et cadre inférieur*/
+    border: ridge #6495ed; /* cadre tableau*/
+    padding:2px 2px; /*  bordure texte en haut et bas / droite et gauche  */
+    width: 70%; /*  largeur du cadre  */
+    margin-left: auto;  /*    Centrage du cadre à gauche  */
+    margin-right: auto;   /*  Centrage du cadre à droite  */
+    color: #2a1c10;    
+    border-radius: 30px;
+   border: 3px solid #4a2b0e;
+   
+}
+
+/* ------------------------------------------------------------------*/
+.td1
+{
+font-family: snell roundhand,edwardian script ITC,french script MT,Kuntler script,vladimir script,comic sans MS, arial;
+     font-size: 25px;
+     text-align: center;
+     font-style: italic;
+
+}
+/* -----------------------------------------------------------------*/
+
+
+
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+position: absolute; /* ajouter cette ligne */
+  top: 0; /* ajouter cette ligne */
+  left: 0; /* ajouter cette ligne */
+  z-index: 1000; /* ajouter cette ligne */
+   pointer-events: none;
+}
+
+
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   pointer-events: none;
+}
+
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  animation: star-move 10s infinite linear;
+  pointer-events: none;
+}  
+
+
+@keyframes star-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+
+
+
+
