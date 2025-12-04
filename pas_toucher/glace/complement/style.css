@@ -1,0 +1,168 @@
+body {
+	border: 6px solid #104587;
+	border-radius: 30px;
+	background-image: url(fond_glace.jpg);
+}
+
+.titre {
+	font-family: comic sans MS;
+	font-size: 25px;
+	text-align: center;
+	font-style: italic;
+	width: 100%; /*  largeur du cadre  */
+	padding: 5px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+	margin: 0 auto;
+	color: #2a1c10;
+}
+
+/* ------------------------------------------------------------------*/
+
+.t1 {
+	font-family: comic sans MS; /* famille police*/
+	font-size: 15px; /* hauteur police*/
+	margin: 10px; /* marge entre bas tableau et cadre inférieur*/
+	border: ridge #6495ed; /* cadre tableau*/
+	padding: 5px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+	width: 70%; /*  largeur du cadre  */
+	margin-left: auto; /*    Centrage du cadre à gauche  */
+	margin-right: auto; /*  Centrage du cadre à droite  */
+	text-align: center;
+	border-radius: 20px;
+	border: 3px solid #104587;
+}
+
+/* ------------------------------------------------------------------*/
+
+#conteneur {
+	display: flex;
+	width: 100%; /*  largeur du cadre  */
+}
+
+/* ------------------------------------------------------------------*/
+
+.mousses {
+	width: 15%; /*  largeur du cadre */
+	font-family: comic sans MS;
+	font-size: 18px;
+	margin: 30px; /* marge entre bas tableau et cadre inférieur*/
+	padding: 15px 20px; /*  bordure texte en haut et bas / droite et gauche  */
+	border-radius: 20px;
+	border: 3px solid #104587;
+}
+
+/* ------------------------------------------------------------------*/
+
+.t2 {
+	background-color: #f8ede0; /* couleur de fond tableau*/
+	font-family: comic sans MS; /* famille police*/
+	font-size: 18px; /* hauteur police*/
+	margin: 30px; /* marge entre bas tableau et cadre inférieur*/
+	border: ridge #6495ed; /* cadre tableau*/
+	padding: 15px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+	width: 100%; /*  largeur du cadre  */
+	margin-left: auto; /*    Centrage du cadre à gauche  */
+	margin-right: auto; /*  Centrage du cadre à droite  */
+	color: #2a1c10;
+	text-align: center;
+	border-radius: 20px;
+	border: 3px solid #104587;
+}
+
+
+.t3 {
+	background-color: #f8ede0; /* couleur de fond tableau*/
+	font-family: comic sans MS; /* famille police*/
+	font-size: 18px; /* hauteur police*/
+	margin: 30px; /* marge entre bas tableau et cadre inférieur*/
+	border: ridge #6495ed; /* cadre tableau*/
+	padding: 15px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+	width: 70%; /*  largeur du cadre  */
+	margin-left: auto; /*    Centrage du cadre à gauche  */
+	margin-right: auto; /*  Centrage du cadre à droite  */
+	color: #2a1c10;
+	text-align: center;
+	border-radius: 20px;
+	border: 3px solid #104587;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------*/
+
+.td1 {
+	text-align: left;
+}
+
+/* -----------------------------------------------------------------*/
+
+.flotte {
+	float: right;
+	padding: 10px 15px; /*  bordure texte en haut et bas / droite et gauche  */
+}
+
+h2 {
+	font-style: italic;
+	text-align: center;
+	font-size: 35px;
+	color: #2a1c10;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/*
+Tous les styles dans le @media print remplacent les style normaux quand la page est imprimée.
+J'ai mis des styles speciaux pour <body>, etc... pour cacher les artifices visuels qui
+gachent l'impression, comme les contours ou même dans ce cas, les images.
+
+Pour les styles "titre" et "mousses", à l'impression, je voulais les cacher, donc tu mets juste: display: none;
+
+Après c'est juste quelques altérations pour controller la taille de la fonte, etc...
+
+Le but, c'est de pouvoir utiliser le même fichier HTML et le styler differemment suivant s'il
+est affiché sur la page ou présenté à l'imprimante. Ça fait moins de travail.
+*/
+
+@media print {
+	body {
+		border: none;
+		background-image: none;
+	}
+
+	.titre {
+		display: none;
+	}
+
+	.mousses {
+		display: none;
+	}
+
+	.t2 {
+		border: none;
+		background-color: white; /* couleur de fond tableau*/
+		font-family: Arial, Helvetica, sans-serif; /* famille police*/
+		font-size: 16px; /* hauteur police*/
+		margin: 0px; /* marge entre bas tableau et cadre inférieur*/
+		padding: 0px; /*  bordure texte en haut et bas / droite et gauche  */
+		width: 100%; /*  largeur du cadre  */
+		margin-left: auto; /*    Centrage du cadre à gauche  */
+		margin-right: auto; /*  Centrage du cadre à droite  */
+		color: black;
+		text-align: center;
+	}
+
+	img {
+		display: none;
+	}
+
+	h2 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: italic;
+		text-align: left;
+		font-size: 20px;
+		color: black;
+	}
+}
