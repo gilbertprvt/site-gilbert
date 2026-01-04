@@ -91,7 +91,10 @@ text-align: center;
    
 }
 
-
+.th
+{
+    text-align: center;
+}
 
 /* ------------------------------------------------------------------*/
 
@@ -150,8 +153,10 @@ background-color:#f8ede0;
 
   
 
-    h1{
-      font-size: 35px;
+   /*   h1{
+    font-size: 15px; 
+      font-style: italic;
+      color: #2a1c10; 
     }
 
     h2 {
@@ -159,10 +164,10 @@ background-color:#f8ede0;
     font-style: italic;
     text-align: center;
     font-size: 20px;
-    color: black;
+    color: black;*/
   }
 
-}
+
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
@@ -202,11 +207,37 @@ background-color:#f8ede0;
     display: none;
   }
 
-  h2 {
+ /* h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: left;
     font-size: 20px;
     color: black;
-  }
-}
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
