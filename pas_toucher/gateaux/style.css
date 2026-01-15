@@ -153,21 +153,6 @@ background-color:#f8ede0;
 
   
 
-   /*   h1{
-    font-size: 15px; 
-      font-style: italic;
-      color: #2a1c10; 
-    }
-
-    h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 20px;
-    color: black;*/
-  }
-
-
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
@@ -192,7 +177,7 @@ background-color:#f8ede0;
   .t2 {
     border: none;
     background-color: white; /* couleur de fond tableau*/
-    font-family: Arial, Helvetica, sans-serif; /* famille police*/
+     font-family: comic sans MS; /* famille police*/
     font-size: 16px; /* hauteur police*/
     margin: 0px; /* marge entre bas tableau et cadre inférieur*/
     padding: 0px; /*  bordure texte en haut et bas / droite et gauche  */
