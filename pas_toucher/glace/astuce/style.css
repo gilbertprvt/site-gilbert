@@ -1,202 +1,61 @@
-body {
-	border: 6px solid #104587;
-	border-radius: 30px;
-	background-image: url(fond_glace.jpg);
-}
+ body {
+                font-family: times new roman,snell roundhand,edwardian script ITC,Arial, sans-serif;
+                font-size: 20px; /*hauteur police*/
+                background-color: #300000;
+                margin: 0;
+                padding: 20px;
+
+            }
+            .histoire{
+                max-width: 800px;
+                margin: 0 auto;
+                 background-color: #fffff1;
+               /* background-color: white;*/
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                color: #300000; /* Marron pour un côté gourmand */
+                font-family: snell roundhand, arial, comic sans MS;
+                font-size: 50px; /*hauteur police*/
+            }
 
 
-.titre
-{
+            .cadre {
+                border: 2px solid #300000;
+             /*   border: 2px solid #8B4513;*/
+                border-radius: 10px;
+                padding: 15px;
+                margin: 15px 0;
+                background-color: #fffaf0; /* Fond légèrement crème */
+            }
+            .cadre h4 {
+                margin-top: 0;
+                color: #300000;
+                text-align: center;
+                font-family: snell roundhand, arial, comic sans MS;
+                font-size: 30px; /*hauteur police*/
+            }
+            ul, ol {
+                margin-left: 20px;
+            }
+            .img {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .img img {
+                border: none;
+            }
 
-     font-family: comic sans MS;
-     font-size: 25px;
-     text-align: center;
-     font-style: italic;
-     width: 100%; /*  largeur du cadre  */
-     padding:5px 15px; /*  bordure texte en haut et bas / droite et gauche  */
-     margin: 0 auto;
-      color: #2a1c10;
-}
-
-/* ------------------------------------------------------------------*/
-
-.t1
-{
-    
-     font-family: comic sans MS; /* famille police*/
-     font-size: 15px; /* hauteur police*/
-     margin:10px ; /* marge entre bas tableau et cadre inférieur*/
-     border: ridge #6495ed; /* cadre tableau*/
-     padding:5px 15px; /*  bordure texte en haut et bas / droite et gauche  */
-     width: 70%; /*  largeur du cadre  */
-     margin-left: auto;  /*    Centrage du cadre à gauche  */
-     margin-right: auto;   /*  Centrage du cadre à droite  */
-     text-align: center;
-     border-radius: 20px;
-     border: 3px solid #104587;
-
-}
-
-/* ------------------------------------------------------------------*/
-
-#conteneur
-{
-     display: flex;
-     width: 97%; /*  largeur du cadre  */
-}
-
-/* ------------------------------------------------------------------*/
-
- .mousses
-{
-      width: 15%; /*  largeur du cadre */ 
-      font-family: comic sans MS;
-    
-      font-size: 18px;
-      margin:30px ; /* marge entre bas tableau et cadre inférieur*/
-      padding:15px 20px; /*  bordure texte en haut et bas / droite et gauche  */
-      border-radius: 20px;
-      border: 3px solid #104587;
-}
+           .texte-rouge {
+                color: red;
+           }
 
 
-/* ------------------------------------------------------------------*/
-
-
-.t2
-{
-    background-color: #f8ede0; /* couleur de fond tableau*/
-    font-family: comic sans MS; /* famille police*/
-    font-size: 18px; /* hauteur police*/
-    margin:30px ; /* marge entre bas tableau et cadre inférieur*/
-    border: ridge #6495ed; /* cadre tableau*/
-    padding:15px 15px; /*  bordure texte en haut et bas / droite et gauche  */
-    width: 100%; /*  largeur du cadre  */
-    margin-left: auto;  /*    Centrage du cadre à gauche  */
-    margin-right: auto;   /*  Centrage du cadre à droite  */
-    color: #2a1c10;
-    text-align: center;
-    border-radius: 20px;
-    border: 3px solid #104587;
-   
-}
-
-
-
-/* ------------------------------------------------------------------*/
-
-.td1
-{
-    text-align: left;
-}
-
-/* -----------------------------------------------------------------*/
-
-.flotte
-{
-float: right ;
-padding:10px 15px; /*  bordure texte en haut et bas / droite et gauche  */
-}
-
-h2
-{
-   font-style: italic;
-   text-align: center;  
-   color: #2a1c10;
-}
-
-/* -----------------------------------------------------------------*/
-
-
-a:hover {
-color:red;
-text-decoration:none;
-background-color:#f8ede0;
-
-}
-
-/* -----------------------------------------------------------------*/
-
-@media screen and (max-width: 1280px)
-{
-
-    .img{
-      max-width: 30%;
-      height: auto;
-      float: center;
-    }
-
-    .img1{
-      max-width: 75%;
-      height: auto;
-      float: right ;
-    }
-
-    .img0{
-      max-width: 30%;
-      height: auto;
-      float: center;
-    }
-
-  
-
-    h1{
-      font-size: 35px;
-    }
-
-    h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 20px;
-    color: black;
-  }
-
-}
-
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-
-@media print {
-  body {
-    border: none;
-    background-image: none;
-  }
-
-  .titre {
-    display: none;
-  }
-
-  .brioche{
-    display: none;
-  }
-
-  .mousses {
-    display: none;
-  }
-
-  .t2 {
-    border: none;
-    background-color: white; /* couleur de fond tableau*/
-    font-family: Arial, Helvetica, sans-serif; /* famille police*/
-    font-size: 16px; /* hauteur police*/
-    margin: 0px; /* marge entre bas tableau et cadre inférieur*/
-    padding: 0px; /*  bordure texte en haut et bas / droite et gauche  */
-    width: 100%; /*  largeur du cadre  */
-    margin-left: auto; /*    Centrage du cadre à gauche  */
-    margin-right: auto; /*  Centrage du cadre à droite  */
-    color: black;
-    text-align: center;
-  }
-
-  img {
-    display: none;
-  }
-
-  h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: left;
-    font-size: 20px;
-    color: black;
-  }
-}
+            .recette {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
