@@ -4,6 +4,61 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <title> couronne des roi </title>
+
+<style>
+  /* Style pour le bouton */
+  .styled-button {
+    display: block;
+    margin: 20px auto; /* Centre le bouton horizontalement */
+    padding: 12px 24px;
+    background-color: #4caf50; /* Vert */
+    color: white;
+    border: black;
+    border-radius: 8px;
+    font-family: comic sans MS; /* famille police*/
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Effet de transition */
+  }
+
+  /* Effet au survol */
+  .styled-button:hover {
+    background-color: #89af3f; /* Vert plus foncé */
+  }
+
+  /* Style pour la modale (inchangé) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: black;
+  }
+</style>
+
+
+
+
     </head>
 
 
@@ -122,7 +177,7 @@
         <li> 50 gr de beurre fondu </li>
         <li> 35 gr de fleur d’oranger</li>
         <li> 30 gr de rhum </li>
-        <li> 1 jus d’orange</li>
+        <li> 50 gr jus d’orange, 70gr maxi</li>
         <li> 1 pincée de sel</li>
     </ul>
 
@@ -144,23 +199,60 @@
         <li> Ajouter petit à petit le restant de sirop, incorporer les fruits confits   (facultatif, en réserver pour la décoration)</li>
         <li> Pétrir 15 mn avec le crochet jusqu’à l’obtention d’une pâte souple</li>
         <li> Faire lever la pâte à température ambiante </li>
-        <li> Rabaisser la  pâte et la réserver au frais une nuit</li>
-    </ol>    
-
-<h4> Le lendemain </h4>   
-    <ol> 
-
-
-
         <li> Faire un sirop 50g de sucre et 5cl d'eau </li>
         <li> Séparer la pâte en 1, 2 ou 3 pâtons </li>
         <li> Façonner les en 1, 2 ou 3 couronnes, laisser gonfler</li>
-        <li> Décorer avec un œuf</li>
+        <li> Décorer avec un œuf et le sucre en grains</li>
         <li> Enfourner à 180° pendant 20 min environ (départ four chaud) </li>
-        <li> Sortir la brioche du four, badigeonner la surface de sirop, décorer avec les fruits confits et le sucre en grains. </li> 
+        <li> Sortir la brioche du four, badigeonner la surface de sirop, décorer le dessus avec les fruits confits. </li> 
         <li>Laisser refroidir.</li>
 
     </ol>
+
+
+<!-- Bouton pour ouvrir la modale -->
+<button id="openModalBtn" class="styled-button"> 🎥  Vidéo: Autre exemple de couronne avec en prime le façonnage  🎬 </button>
+
+<!-- Structure de la modale (cachée par défaut) -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- La vidéo est UNIQUEMENT ici -->
+    <video id="modalVideo" width="100%" controls>
+      <source src="astuce/couronne.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la balise vidéo.
+    </video>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  const modal = document.getElementById("videoModal");
+  const btn = document.getElementById("openModalBtn");
+  const span = document.getElementsByClassName("close")[0];
+  const video = document.getElementById("modalVideo"); // Récupère la vidéo
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+    video.pause(); // Arrête la vidéo
+    video.currentTime = 0; // Remet la vidéo au début (optionnel)
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      video.pause(); // Arrête la vidéo
+      video.currentTime = 0; // Remet la vidéo au début (optionnel)
+    }
+  }
+</script>
 
 
 
